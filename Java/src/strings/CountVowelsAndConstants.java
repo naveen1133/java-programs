@@ -1,6 +1,6 @@
 package strings;
 
-public class Count {
+public class CountVowelsAndConstants {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
