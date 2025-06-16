@@ -14,13 +14,13 @@ public class ReverseString {
 //			r=c+r;		}
 //		System.out.println(r);
 //		
-//		StringBuilder sb = new StringBuilder();
-//		
-//		sb.append(s);
-//		
-//		sb.reverse();
-//		
-//		System.out.println(sb);
+		StringBuilder sb = new StringBuilder();
+		
+		sb.append(s);
+		
+		sb.reverse();
+		
+		System.out.println(sb);
 		
 		char[] c= s.toCharArray();
 		

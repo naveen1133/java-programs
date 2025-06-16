@@ -10,7 +10,7 @@ String s = "naveen";
         
         // Remove duplicates using streams
         String result = s.chars()                             // Convert the string to an IntStream of characters
-                         .distinct()                        // Remove duplicates
+                         .distinct().sorted()                   // Remove duplicates
                          .mapToObj(c -> String.valueOf((char) c)) // Convert each int to a char
                          .collect(Collectors.joining());     // Collect the result into a new string
         

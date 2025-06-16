@@ -1,31 +1,29 @@
 package strings;
 
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class RemoveDuplicate {
+
     public static void main(String[] args) {
-        String s = "naveen";
-        char[] c = s.toCharArray(); // Convert string to char array
 
-        StringBuilder result = new StringBuilder(); // To store the result
+        String input = "naveen";
 
-        for (int i = 0; i < s.length(); i++) { // Outer loop
-            boolean isDuplicate = false;
+        Set<Character> uniqueOrdered = new LinkedHashSet<>();
+        char[] chars = input.toCharArray();
 
-            // Check if character is already present in the result
-            for (int j = 0; j < result.length(); j++) { // Inner loop to compare with result
-                if (c[i] == result.charAt(j)) {
-                    isDuplicate = true;
-                    break;
-                }
-            }
-
-            // If character is not duplicate, append to result
-            if (!isDuplicate) {
-                result.append(c[i]);
-            }
+        for (int i = 0; i < chars.length; i++) {
+            uniqueOrdered.add(chars[i]);
         }
 
-        // Print the final string after removing duplicates
-        System.out.println("Original String: " + s);
-        System.out.println("String after removing duplicates: " + result.toString());
+        StringBuilder result = new StringBuilder();
+        // Using for loop to build the string
+        Character[] uniqueArray = uniqueOrdered.toArray(new Character[0]);
+        for (int i = 0; i < uniqueArray.length; i++) {
+            result.append(uniqueArray[i]);
+        }
+
+        System.out.println("String without duplicates: " + uniqueOrdered.toString());
     }
 }
