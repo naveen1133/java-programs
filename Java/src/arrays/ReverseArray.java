@@ -12,13 +12,14 @@ public class ReverseArray {
 
 		 ArrayList<Integer> b = new ArrayList<>();
 		 
-		 for(int i=a.length-1;i>=0;i--) {
+		 for(int i=0;i<a.length;i++) {
 			 b.add(a[i]);
 		 }
+		 Collections.reverse(b);
 		 System.out.println(b);
-		 List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 4, 4, 5);
-		 Collections.reverse(numbers);
-		 System.out.println(numbers);
+//		 List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 4, 4, 5);
+//		 Collections.reverse(numbers);
+//		 System.out.println(numbers);
 	}
 
 }

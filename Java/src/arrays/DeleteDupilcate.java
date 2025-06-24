@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DeleteDupilcate {
@@ -9,19 +10,13 @@ public class DeleteDupilcate {
 		
 		
 		int[] a = {21,31,4,90,31,3,4,21};
-		int c=0;
-		
-		for (int i=0; i<a.length-1; i++) {
-			for(int j=i+1; j<a.length; j++) {
-				if(a[i] == a[j]) {
-					c++;
-				//System.out.println(a[j]);
-				
+
+		List<Integer> b = new ArrayList<>();
+		for(int i=0;i<a.length;i++) {
+			if(!b.contains(a[i])) {
+				b.add(a[i]);
 			}
 		}
-		 
-
-	}
-		System.out.println(c);
+		System.out.println(b);
 
 	}}
