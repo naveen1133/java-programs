@@ -24,7 +24,7 @@ public class RemoveDuplicate {
                 result.append(c[i]);
             }
         }
-
+   
         // Print the final string after removing duplicates
         System.out.println("Original String: " + s);
         System.out.println("String after removing duplicates: " + result.toString());

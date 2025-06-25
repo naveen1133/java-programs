@@ -4,7 +4,7 @@ public class Palindrome {
 
     public static void main(String[] args) {
         
-        String s = "navan";  // Original string
+        String s = "Navan";  // Original string
         
 //        StringBuilder sb = new StringBuilder();  
 //        sb.append(s);        
@@ -21,7 +21,8 @@ public class Palindrome {
         for(int i=s.length()-1;i>=0;i--) {
         	r+=c[i];
         }
-        if(r.equals(s)) {
+        System.out.println(r);
+        if(r.equalsIgnoreCase(s)) {
         	System.out.println(s + " "+ "is a palindrome");
         }
         else {
