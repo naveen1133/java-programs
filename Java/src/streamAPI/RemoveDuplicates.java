@@ -7,6 +7,7 @@ public class RemoveDuplicates {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 String s = "naveen";
+
         
         // Remove duplicates using streams
         String result = s.chars()                             // Convert the string to an IntStream of characters
