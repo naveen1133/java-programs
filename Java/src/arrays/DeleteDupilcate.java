@@ -18,5 +18,4 @@ public class DeleteDupilcate {
 			}
 		}
 		System.out.println(b);
-
 	}}
