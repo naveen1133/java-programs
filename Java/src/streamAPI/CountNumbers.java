@@ -11,9 +11,21 @@ public class CountNumbers {
 
         Map<Object, Long> s = a.stream()
             .collect(Collectors.groupingBy(n -> n, LinkedHashMap::new, Collectors.counting()));
-List<Integer> l = a.stream().distinct().collect(Collectors.toList());
+List<Integer> l = a.stream().sorted().distinct().collect(Collectors.toList());
 System.out.println(l);
         System.out.println(s);
+        String st = "naveen";
+
+        Map<Character, Long> result =
+                st.chars()                         // IntStream
+                 .mapToObj(c -> (char) c)         // convert int → Character
+                 .collect(Collectors.groupingBy(
+                         c -> c,
+                         LinkedHashMap::new,
+                         Collectors.counting()
+                 ));
+
+        System.out.println(result);
     }
 }
 

@@ -6,26 +6,26 @@ public class ReverseString {
 		// TODO Auto-generated method stub
 		
 		String s = "Naveen";
-//		String r="";
-//		char c;
-//		for(int i=0;i<s.length(); i++) {
-//			c=s.charAt(i);
-//			
-//			r=c+r;		}
-//		System.out.println(r);
-//		
-//		StringBuilder sb = new StringBuilder();
-//		
-//		sb.append(s);
-//		
-//		sb.reverse();
-//		
-//		System.out.println(sb);
+		String r="";
+		char c;
+		for(int i=0;i<s.length(); i++) {
+			c=s.charAt(i);
+			
+			r=c+r;		}
+		System.out.println(r);
 		
-		char[] c= s.toCharArray();
+		StringBuilder sb = new StringBuilder();
+		//modifies the same object --> append
+		sb.append(s);
+		
+		sb.reverse();
+		
+		System.out.println(sb);
+		
+		char[] c1= s.toCharArray();
 		
 		for(int i=s.length()-1;i>=0;i--) {
-			System.out.print(c[i]);
+			System.out.print(c1[i]);
 		}
 		}
 
