@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 public class SortString {
 
 	public static void main(String[] args) {
-		String s ="gdlhc";
+		String s ="gdlhCcD";
 		
 		char[] c= s.toCharArray();
 		
