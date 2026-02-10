@@ -28,7 +28,7 @@ public class MissingNumbers {
 		List<Integer> missing= new ArrayList<>();
 		
 		for(int i=min;i<=max;i++) {
-			if(!set.contains(i)) {
+			if(!set.contains(i) && set.contains(i)) {
 				missing.add(i);
 			}
 		}

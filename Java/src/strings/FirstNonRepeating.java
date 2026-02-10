@@ -21,6 +21,7 @@ public class FirstNonRepeating {
             }
 
             if (count == 1) {
+            	
                 System.out.println("First non-repeating character: " + c[i]);
                 return; // stop after finding the first one
             }

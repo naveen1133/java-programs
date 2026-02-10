@@ -15,6 +15,7 @@ public class ReverseArray {
 		 
 		 for(int i=0;i<a.length;i++) {
 			 b.add(a[i]);
+			 
 		 }
 		 Collections.reverse(b);
 		 System.out.println(b);
