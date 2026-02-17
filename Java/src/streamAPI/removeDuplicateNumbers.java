@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 
-public class filter {
+public class removeDuplicateNumbers {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

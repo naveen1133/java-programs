@@ -1,6 +1,5 @@
 package strings;
 
-import java.util.stream.Collectors;
 
 public class SortString {
 
@@ -18,17 +17,8 @@ public class SortString {
 				}
 			}
 		}
-		//String sortedString = new String(c);
-
-		
-        // Print the sorted string
         System.out.println(c);
-        
-//        String st = s.chars()
-//                .sorted()
-//                .mapToObj(ch -> String.valueOf((char) ch))
-//                .collect(Collectors.joining());
-//System.out.println(st);
+
 	}
 
 }

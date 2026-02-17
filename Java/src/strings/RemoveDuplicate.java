@@ -28,5 +28,22 @@ public class RemoveDuplicate {
         // Print the final string after removing duplicates
         System.out.println("Original String: " + s);
         System.out.println("String after removing duplicates: " + result.toString());
+        
+
+
+        String input = "programming";
+        String result1 = "";
+
+        for (int i = 0; i < input.length(); i++) {
+            char d = input.charAt(i);
+
+            if (result1.indexOf(d) == -1) {
+                result1+= d;
+            }
+        }
+
+        System.out.println(result1);
+    
     }
+
 }

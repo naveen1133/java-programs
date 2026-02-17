@@ -15,7 +15,12 @@ public class RemoveDuplicates {
 		for(int i=0;i<st.length();i++) {
 			n.add(st.charAt(i));
 		}
-		System.out.println(n);
+		StringBuilder result = new StringBuilder();
+		for (char c : n) {
+		    result.append(c);
+		}
+
+		System.out.println(result.toString());
 		for(int i=0;i<a.length;i++) {
 			s.add(a[i]);
 		}

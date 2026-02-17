@@ -3,7 +3,7 @@ package strings;
 public class EqualBrackets {
 
     public static void main(String[] args) {
-        String s = "}(hello)(world{";
+        String s = "}(hello)(world";
         int open = 0;
         int close = 0;
 

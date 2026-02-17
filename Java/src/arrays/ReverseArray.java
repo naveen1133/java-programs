@@ -19,12 +19,8 @@ public class ReverseArray {
 		 }
 		 Collections.reverse(b);
 		 System.out.println(b);
-		 List<Integer> numbers = Arrays.asList(1, 2, 2, 3, 4, 4, 5);
 		 
-		 //removing the duplicates by using the distinct method in stream
-		 List<Integer> d = numbers.stream().distinct().collect(Collectors.toList());
-//		 Collections.reverse(numbers);
-		 System.out.println(d);
+
 	}
 
 }

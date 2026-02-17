@@ -7,15 +7,14 @@ public class ReverseString {
 		
 		String s = "Naveen";
 		String r="";
-		char c;
 		for(int i=0;i<s.length(); i++) {
-			c=s.charAt(i);
+			char c=s.charAt(i);
 			
 			r=c+r;		}
 		System.out.println(r);
 		
 		StringBuilder sb = new StringBuilder();
-		//modifies the same object --> append
+
 		sb.append(s);
 		
 		sb.reverse();
