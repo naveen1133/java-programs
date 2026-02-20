@@ -2,31 +2,23 @@ package strings;
 
 public class FirstNonRepeating {
     public static void main(String[] args) {
-        String s = "naveen";
+        String str = "naveena";
+   
+        for (int i = 0; i < str.length(); i++) {
 
-        char[] c = s.toCharArray();
+            int count = 0;
 
-        for (int i = 0; i < c.length; i++) {
-            if (c[i] == '0') {
-                continue; // already counted
-            }
+            for (int j = 0; j < str.length(); j++) {
 
-            int count = 1;
-
-            for (int j = i + 1; j < c.length; j++) {
-                if (c[i] == c[j]) {
+                if (str.charAt(i) == str.charAt(j)) {
                     count++;
-                    c[j] = '0'; // mark as counted
                 }
             }
 
             if (count == 1) {
-            	
-                System.out.println("First non-repeating character: " + c[i]);
-                return; // stop after finding the first one
+                System.out.println(str.charAt(i));
+                break;
             }
         }
-
-        System.out.println("No non-repeating character found.");
     }
 }
