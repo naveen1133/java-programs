@@ -10,8 +10,8 @@ public class StringCount {
 
 	public static void main(String[] args) {
 		 List<String> words = Arrays.asList(
-	                "apple", "ant", "bat", "banana", "ball", "bat",
-	                "umbrella", "orange", "owl" ,"ball"
+				 "ab" ,"apple", "ant", "bat", "banana", "ball", "bat",
+	                "umbrella", "orange", "owl" ,"ball" ,"ab"
 	        );
 		
 	        Map<String, Long> countMap =

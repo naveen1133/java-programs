@@ -20,6 +20,5 @@ public class CountingInString {
                 Map<Object, Long> frequency = numbers.stream().collect(Collectors.groupingBy(c -> c, LinkedHashMap::new,Collectors.counting()));
                 System.out.println(frequency);
                 
-    }
-    
+    }   
 }

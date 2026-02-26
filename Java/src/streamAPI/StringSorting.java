@@ -11,7 +11,6 @@ public class StringSorting {
 		
 		String a = s.chars().sorted().mapToObj(ch -> String.valueOf((char) ch)).collect(Collectors.joining());
 		System.out.println(a);
-
 	}
 
 }

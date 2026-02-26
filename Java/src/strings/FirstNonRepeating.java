@@ -2,7 +2,7 @@ package strings;
 
 public class FirstNonRepeating {
     public static void main(String[] args) {
-        String str = "naveena";
+        String str = "nmaveen";
    
         for (int i = 0; i < str.length(); i++) {
 
