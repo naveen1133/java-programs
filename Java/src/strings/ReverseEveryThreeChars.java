@@ -14,4 +14,3 @@ public class ReverseEveryThreeChars {
         System.out.println("Output: " + result.toString());
     }
 }
-

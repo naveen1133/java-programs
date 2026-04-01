@@ -9,7 +9,7 @@ public class FindFirstCharacter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String a ="naveeankvk";
+		String a ="naveeankvkz";
 		Character result = a.chars()
                 .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(
