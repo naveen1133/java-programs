@@ -24,8 +24,7 @@ public class FindFirstCharacter {
                 .orElse(null);
 
         System.out.println(result);
-		
-		
+	
 	}
 
 }

@@ -10,7 +10,7 @@ public class AddTwoNumber {
 		List<Integer> b = new ArrayList<>();
 		for(int i=0;i<a.length;i++) {
 			for(int j=i+1;j<a.length;j++) {
-				if(a[i] + a[j] == 7) {
+				if(a[i] + a[j] == 42) {
 					b.add(a[i]);
 					b.add(a[j]);
 					break;
@@ -18,7 +18,5 @@ public class AddTwoNumber {
 			}
 		}
 		System.out.println(b);
-//		List<Integer> b = Arrays.asList(2,4,67,42,90);
-//		List<Integer> c = b.stream().filter(n ->)
 	}
 }

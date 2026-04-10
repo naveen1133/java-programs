@@ -16,9 +16,6 @@ public class CountingInString {
                         Collectors.counting()));                               // Count occurrences
                 System.out.println(frequencyMap);
                  
-                List<Integer> numbers = Arrays.asList( 1,2,45,34,43,54,45,1,3);
-                Map<Object, Long> frequency = numbers.stream().collect(Collectors.groupingBy(c -> c, LinkedHashMap::new,Collectors.counting()));
-                System.out.println(frequency);
                 
     }   
 }

@@ -9,20 +9,20 @@ public class ReverseString {
 		String r="";
 		for(int i=0;i<s.length(); i++) {
 			char c=s.charAt(i);
-			
-			r=c+r;		}
+			r=c+r;	
+			}
 		System.out.println(r);
 		
+		
+//		Using String builder
 		StringBuilder sb = new StringBuilder();
-
 		sb.append(s);
-		
 		sb.reverse();
-		
 		System.out.println(sb);
 		
-		char[] c1= s.toCharArray();
 		
+//		Using char with another logic 
+		char[] c1= s.toCharArray();
 		for(int i=s.length()-1;i>=0;i--) {
 			System.out.print(c1[i]);
 		}

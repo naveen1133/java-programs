@@ -4,7 +4,7 @@ package strings;
 public class SortString {
 
 	public static void main(String[] args) {
-		String s ="gdlhCcD";
+		String s ="gdlhCcDaA";
 		
 		char[] c= s.toCharArray();
 		
