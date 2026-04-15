@@ -9,12 +9,13 @@ public class BasicMap {
 		 HashMap<String, String> capitalCities = new HashMap<String, String>();
 
 		    // Add keys and values (Country, City)
-		    capitalCities.put("England", "London");
+		    capitalCities.put("", "London");
 		    capitalCities.put("India", "New Dehli");
 		    capitalCities.put("Austria", "Wien");
 		    capitalCities.put("Norway", "Oslo");
-		    capitalCities.put("Norwa", "Oslo"); // Duplicate
+		    capitalCities.put("", "Oslo"); // Duplicate
 		    capitalCities.put("USA", "Washington DC");
+		    capitalCities.put("India", "Dehli");
 
 		    System.out.println(capitalCities);
 
