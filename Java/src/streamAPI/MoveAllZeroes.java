@@ -13,8 +13,6 @@ public class MoveAllZeroes {
 		List<Integer> b=  IntStream.concat(Arrays.stream(a).filter(i -> i!=0), Arrays.stream(a).filter(i -> i==0)).boxed()
 				.toList();
 System.out.println(b);
-
-
 	}
 
 }
