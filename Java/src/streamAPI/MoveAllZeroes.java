@@ -14,6 +14,7 @@ public class MoveAllZeroes {
 				.toList();
 System.out.println(b);
 
+
 	}
 
 }
