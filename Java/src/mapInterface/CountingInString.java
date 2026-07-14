@@ -12,8 +12,6 @@ public class CountingInString {
                 .mapToObj(c -> (char) c)                                       // Convert to Character
                 .collect(Collectors.groupingBy(c -> c, LinkedHashMap::new,     // Group by character
                         Collectors.counting()));                               // Count occurrences
-
-//        frequencyMap.forEach((ch, count) -> 
                 System.out.println(frequencyMap);
     }
 }
